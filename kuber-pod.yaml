@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app-kuber
+spec:
+  containers:
+  - name: app-kuber-container
+    image: alekseevdm/my-nginx-app:latest
+    ports:
+    - containerPort: 443
