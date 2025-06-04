@@ -7,6 +7,7 @@ spec:
     app: http-server
   ports:
     - protocol: TCP
-      port: 11111
-      targetPort: 443
+      port: 443         # порт внутри кластера
+      targetPort: 443   # порт контейнера
+      nodePort: 32222   # желаемый порт на узле
   type: NodePort
